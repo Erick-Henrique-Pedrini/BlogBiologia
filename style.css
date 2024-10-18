@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    margin: 0 1vw 0 1vw;
+}
+.citologia{
+    background-color: rgb(255, 255, 255);
+    padding: 2vw 0 2vw 0;
+}
+.citologia h2{
+    text-align: center;
+    margin: 4vw 0 4vw 0;
+}
+.citologia p{
+    margin: 0 20vw 0 20vw;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+.celulas h2{
+    text-align: center;
+    margin-bottom: 3vw;
+}
+.celulas ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}   
+.celulas ul li ul{
+    display: flex;
+    flex-direction: column;
+    height: 15vw;
+    width: 15vw;
+    background-color: aqua;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+.celulas ul li ul li{
+    margin: 0 2vw 0 2vw;
+
+}
+.celulas ul li ul li p{
+    margin: 1.4vw 0 1.4vw 0;
+    
+}
+
+.celulas button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.celulas button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.75s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+.celulas button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.celulas button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+
+
