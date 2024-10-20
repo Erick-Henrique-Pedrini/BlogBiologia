@@ -10,13 +10,18 @@
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 2vw;
     padding-bottom: 2vw;
+    
+}
+nav h2{
+    margin: 0 0 0 10vw;
 }
 nav ul{
     display: flex;
     align-items: center;
+    margin: 0 10vw 0 0 ;
 }
 nav ul li{
     position: relative;
@@ -26,11 +31,12 @@ nav a {
     color: #272727;
     text-decoration: none;
     position: relative; 
+    font-size: 1.3rem;
 }
 
 nav a::after {
     content: "";
-    background-color: aqua;
+    background-color: rgb(10, 73, 10);
     height: 2px;
     width: 100%; 
     position: absolute;
@@ -42,9 +48,110 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%; 
-    color: aqua;
+    color: rgb(10, 73, 10);
 }
 
 nav a:hover{
-    color: aqua;
+    color: rgb(10, 73, 10);
+}
+.organelas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw 0 4vw 0;
+}
+
+.organelas ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0 4vw 0 0vw;
+
+}
+.organelas span{
+    color: rgb(10, 73, 10);
+}
+.organelas h1{
+    font-size: 4rem;
+}
+.organelas article{
+    font-size: 1.3rem;
+    margin: 1vw 0vw 1vw 0vw;
+}
+.organelas img{
+    height: 20vw;
+    width: 30vw;
+  
+    border-radius: 50px;
+
+}
+.funcoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    background-color: rgb(10, 73, 10);
+    padding: 2vw 0 2vw 0;
+}
+.funcoes h2{
+    font-size: 2rem;
+    color: white
+}
+footer{
+    background-color: rgb(10, 73, 10);
+    padding: 2vw 0 2vw 0;
+    margin-top:8vw;
+}
+footer p{
+    font-size: 1.5rem;
+
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    margin: 0 20vw 0 20vw;
+    justify-content: space-between;
+
+    padding-bottom: 2vw;
+    border-bottom: 2px solid #ffffff;
+}
+footer h3{
+    text-align: center;
+    margin-top: 2vw;
+    font-weight: 300;
+}
+
+footer button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+footer button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.75s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+footer button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+footer button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }

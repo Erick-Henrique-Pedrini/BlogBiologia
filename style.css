@@ -10,13 +10,18 @@
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 2vw;
     padding-bottom: 2vw;
+    
+}
+nav h2{
+    margin: 0 0 0 10vw;
 }
 nav ul{
     display: flex;
     align-items: center;
+    margin: 0 10vw 0 0 ;
 }
 nav ul li{
     position: relative;
@@ -26,11 +31,12 @@ nav a {
     color: #272727;
     text-decoration: none;
     position: relative; 
+    font-size: 1.3rem;
 }
 
 nav a::after {
     content: "";
-    background-color: aqua;
+    background-color: rgb(10, 73, 10);
     height: 2px;
     width: 100%; 
     position: absolute;
@@ -42,11 +48,11 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%; 
-    color: aqua;
+    color: rgb(10, 73, 10);
 }
 
 nav a:hover{
-    color: aqua;
+    color: rgb(10, 73, 10);
 }
 .citologia{
     background-color: rgb(255, 255, 255);
@@ -67,6 +73,7 @@ nav a:hover{
     text-align: center;
     margin-bottom: 3vw;
     margin: 2vw 0 4vw 0;
+    color: white;
 }
 .celulas ul{
     display: flex;
@@ -78,7 +85,7 @@ nav a:hover{
     flex-direction: column;
     height: 20vw;
     width: 20vw;
-    background-color: aqua;
+    background-color: rgb(10, 73, 10);
     border-radius: 15px;
     justify-content: center;
     align-items: center;
@@ -86,13 +93,16 @@ nav a:hover{
 }
 .celulas ul li ul li{
     margin: 0 2vw 0 2vw;
-
+    
 }
 .celulas ul li ul li p{
     margin: 1.4vw 0 1.4vw 0;
     font-size: 1rem;
+    color: white;
 }
-
+.celulas ul li ul li h3{
+    color: white;
+}
 .celulas button {
     padding: 15px 30px;
     font-size: 16px;
@@ -104,6 +114,7 @@ nav a:hover{
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    margin-top: 2vw;
 }
 
 .celulas button::before {
@@ -129,12 +140,13 @@ nav a:hover{
     transform: translateY(-5px);
 }
 footer{
-    background-color: aqua;
+    background-color: rgb(10, 73, 10);
     padding: 2vw 0 2vw 0;
     margin-top:8vw;
 }
 footer p{
     font-size: 1.5rem;
+    color: white;
 
 }
 footer ul{
@@ -144,12 +156,13 @@ footer ul{
     justify-content: space-between;
 
     padding-bottom: 2vw;
-    border-bottom: 2px solid #272727;
+    border-bottom: 2px solid #ffffff;
 }
 footer h3{
     text-align: center;
     margin-top: 2vw;
     font-weight: 300;
+    color: white;
 }
 
 footer button {
