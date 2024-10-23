@@ -1,10 +1,4 @@
 *{
-    
-}
-html{
-    background-color: #f4f4f9;
-}
-*{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -76,8 +70,8 @@ span::after {
     left: 0;
     width: 0; 
     height: 3px;
-    animation: animationLine 1s forwards;   
-}   
+    animation: animationLine 1s forwards; 
+}
 
 @keyframes animationLine {
     0% {
@@ -86,63 +80,6 @@ span::after {
     100% {
         width: 100%; /* Expands to full width of the span */
     }
-}
-.grupo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 3vw 0 3vw;
-    flex-direction: column;
-}
-h1{
-    font-size: 4rem;
-    text-align: center;
-}
-.grupo ul.pessoas{
-    background-color: #24ad5d;
-    margin: 4vw 0 2vw 0;
-    width: 70vw;
-    height: 50vw;
-    display: flex;
-   flex-wrap: wrap;
-    justify-content: space-evenly;
-   padding: 10vw 5vw 5vw 5vw;
-   border-radius: 15px;
-   box-shadow:  0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-.grupo ul.pessoas li.integrante{
-    background-color: white;
-    width: 30vw;
-    height: 18vw;
-    margin: 2vw 2vw 2vw 2vw;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow:  0px 10px 20px rgba(0, 0, 0, 0.1);
-    transition: 0.5s;
-}
-li.integrante:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-}
-img{
-    width: 13vw;
-    height: 11vw;
-    border-radius: 30px;
-    margin: 0 0 0 2vw;
-}
-.grupo p,h2{
-    text-align: center;
-    margin: 0 4vw 0 4vw;
-}
-.grupo .especial{
-    position: relative;
-    z-index: 2;
-    top: 12vw;
-    color: white;
-    font-size: 2rem;
 }
 footer{
     background-color: rgb(10, 73, 10);
