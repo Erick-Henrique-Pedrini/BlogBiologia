@@ -7,6 +7,9 @@
     font-weight: weight;
     font-style: normal;
 }
+header{
+    background-color: #f4f4f9;;
+}
 nav{
     display: flex;
     align-items: center;
@@ -58,14 +61,14 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4vw 0 4vw 0;
+    padding: 6vw 10vw;  
+    background-color: #f4f4f9;  
 }
 
 .organelas ul{
     display: flex;
     flex-direction: column;
-    margin: 0 4vw 0 0vw;
-
+    margin-right: 5vw; 
 }
 .organelas span{
     color: rgb(10, 73, 10);
@@ -80,26 +83,77 @@ nav a:hover{
 .organelas img{
     height: 20vw;
     width: 30vw;
-  
     border-radius: 50px;
+}
+.funcoes {
+    background-color: #f4f4f9;
+    padding: 4vw 0;
+    text-align: center;
+}
 
+.funcoes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3vw;
+    color: #0a490a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
-.funcoes{
+
+.funcoes ul {
+    margin: 0 auto;
+    padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 2vw;
-    background-color: rgb(10, 73, 10);
-    padding: 2vw 0 2vw 0;
+    gap: 3vw;
 }
-.funcoes h2{
-    font-size: 2rem;
-    color: white
+
+.funcoes li {
+    background-color: white;
+    padding: 2vw;
+    width: 28vw;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.funcoes li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.funcoes h3 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    margin-bottom: 1vw;
+}
+
+.funcoes p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1vw;
+}
+
+/* Responsividade */
+/* sei la como funciona so sei que faz as li ficarem bonitinhas caso a tela seja menor que deveria*/
+@media (max-width: 768px) {
+    .funcoes ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .funcoes li {
+        width: 90%;
+        margin-bottom: 2vw;
+    }
+}
+
+
 footer{
     background-color: rgb(10, 73, 10);
     padding: 2vw 0 2vw 0;
-    margin-top:8vw;
 }
 footer p{
     font-size: 1.5rem;
