@@ -57,6 +57,30 @@ nav a:hover::after {
 nav a:hover{
     color: rgb(10, 73, 10);
 }
+span {
+    position: relative; /* Ensures the ::after is positioned correctly */
+    display: inline-block; /* Allows the width/height of the span to be respected */
+}
+
+span::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(10, 73, 10);
+    top: 100%; 
+    left: 0;
+    width: 0; 
+    height: 3px;
+    animation: animationLine 1s forwards; 
+}
+
+@keyframes animationLine {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%; /* Expands to full width of the span */
+    }
+}
 .organelas{
     display: flex;
     justify-content: center;
@@ -70,9 +94,7 @@ nav a:hover{
     flex-direction: column;
     margin-right: 5vw; 
 }
-.organelas span{
-    color: rgb(10, 73, 10);
-}
+
 .organelas h1{
     font-size: 4rem;
 }
