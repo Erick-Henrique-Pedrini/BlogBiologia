@@ -139,7 +139,7 @@ h3{
     height: 12vw;
     padding: 2vw;
     margin: 2vw 2vw 1vw 2vw;
-    border-radius: 30px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +161,7 @@ h4{
     text-align: center;
     font-size: 1.3rem;
     margin: -0.7vw 0 1vw 0;
+    color: #007BFF;
 }
 footer{
     background-color: rgb(10, 73, 10);
