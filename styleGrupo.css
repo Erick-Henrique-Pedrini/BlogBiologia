@@ -1,0 +1,118 @@
+*{
+    
+}
+html{
+    background-color: whitesmoke;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+header{
+    background-color: #f4f4f9;;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    
+}
+nav h2{
+    margin: 0 0 0 10vw;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0 10vw 0 0 ;
+}
+nav ul li{
+    position: relative;
+    margin: 0 1vw 0 1vw;
+}
+nav a {
+    color: #272727;
+    text-decoration: none;
+    position: relative; 
+    font-size: 1.3rem;
+}
+
+nav a::after {
+    content: "";
+    background-color: rgb(10, 73, 10);
+    height: 2px;
+    width: 100%; 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    transition: width 0.5s ease; 
+    width: 0; 
+}
+
+nav a:hover::after {
+    width: 100%; 
+    color: rgb(10, 73, 10);
+}
+
+nav a:hover{
+    color: rgb(10, 73, 10);
+}
+span {
+    position: relative; /* Ensures the ::after is positioned correctly */
+    display: inline-block; /* Allows the width/height of the span to be respected */
+}
+
+span::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(10, 73, 10);
+    top: 100%; 
+    left: 0;
+    width: 0; 
+    height: 3px;
+    animation: animationLine 1s forwards;   
+}   
+
+@keyframes animationLine {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%; /* Expands to full width of the span */
+    }
+}
+.grupo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw 0 3vw;
+    flex-direction: column;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.grupo ul.pessoas{
+    background-color: #24ad5d;
+    margin: 4vw 0 2vw 0;
+    width: 70vw;
+    height: 50vw;
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-evenly;
+   padding: 5vw 5vw 5vw 5vw;
+   border-radius: 15px;
+}
+.grupo ul.pessoas li.integrante{
+    background-color: white;
+    width: 30vw;
+    height: 18vw;
+    margin: 2vw 2vw 0vw 0vw;
+    border-radius: 30px;
+}
