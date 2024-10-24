@@ -7,6 +7,10 @@
     font-weight: weight;
     font-style: normal;
 }
+html{
+    background-color: #f4f4f9;
+    
+}
 header{
     background-color: #f4f4f9;;
 }
@@ -81,124 +85,91 @@ span::after {
         width: 100%; /* Expands to full width of the span */
     }
 }
-.organelas{
+section.eucariontes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0 2vw;
+}
+section.eucariontes h1{
+    font-size: 4rem;
+}
+section.eucariontes p{
+    margin: 2vw 0 2vw 0;
+    text-align: center;
+    margin: 2vw 20vw 2vw 20vw;
+    font-size: 1.5rem;
+}
+.eucariontes img{
+    border-radius: 30px;
+    width: 20vw;
+    height: 12vw;
+}
+.caracteristicas{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6vw 10vw;  
-    background-color: #f4f4f9;  
-}
-
-.organelas ul{
-    display: flex;
     flex-direction: column;
-    margin-right: 5vw; 
-    justify-content: center;
-    align-items: ce;
 }
-
-.organelas h1{
-    font-size: 4rem;
+.caracteristicas h2{
+    font-size: 3rem;
+    color: rgb(10, 73, 10);
+    margin: 2vw 0 2vw 0;
+    border-top:  rgb(10, 73, 10) 3px solid;
+    padding: 2vw 0 0 0vw;
 }
-.organelas article{
-    font-size: 1.3rem;
-    margin: 1vw 0vw 1vw 0vw;
+h3{
+    font-size: 2rem;
+    margin: 1vw 0 0 0;
 }
-.organelas img{
-    height: 20vw;
-    width: 30vw;
-    border-radius: 50px;
-}
-.funcoes {
+.caracteristicas ul.membrana{
     background-color: #f4f4f9;
-    padding: 4vw 0;
-    text-align: center;
-}
-
-.funcoes h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3vw;
-    color: #0a490a;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-}
-
-.funcoes ul {
-    margin: 0 auto;
-    padding: 0;
+    margin: 4vw 0 4vw 0;
+    width: 100vw;
+    height: 50vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3vw;
+    border-radius: 15px;
 }
-
-.funcoes li {
+.caracteristicas ul.membrana li.membranaDet{
     background-color: white;
+    width:25vw;
+    height: 12vw;
     padding: 2vw;
-    width: 28vw;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 2vw 2vw 1vw 2vw;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.caracteristicas ul.membrana li.membranaDet h4{
+    align-self: flex-start;
+
+
 }
 
-.funcoes li:hover {
+li.membranaDet:hover {
     transform: translateY(-5px);
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
 }
-
-.funcoes h3 {
-    font-size: 1.8rem;
+h4{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: -0.7vw 0 1vw 0;
     color: #007BFF;
-    margin-bottom: 1vw;
 }
-
-.funcoes p {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 1vw;
-}
-
-/* Responsividade */
-/* sei la como funciona so sei que faz as li ficarem bonitinhas caso a tela seja menor que deveria*/
-@media (max-width: 768px) {
-    .funcoes ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .funcoes li {
-        width: 90%;
-        margin-bottom: 2vw;
-    }
-
-    span{
-        margin: -25vw 0 0 0;
-    }
-
-    .organelas h1{
-        font-size: 3rem;
-    
-    }
-    .organelas article{
-        font-size: 1.3rem;
-    }
-    .organelas img{
-        display: none;
-    }
-    .funcoes h2{
-        margin: 1vw;
-    }
-}
-
-
 footer{
     background-color: rgb(10, 73, 10);
     padding: 2vw 0 2vw 0;
 }
 footer p{
     font-size: 1.5rem;
+    color: white;
 
 }
 footer ul{
@@ -214,6 +185,7 @@ footer h3{
     text-align: center;
     margin-top: 2vw;
     font-weight: 300;
+    color: white;
 }
 
 footer button {
