@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -7,26 +7,25 @@
     font-weight: weight;
     font-style: normal;
 }
-header{
-    background-color: #f4f4f9;;
+header {
+    background-color: #f4f4f9;
 }
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    
 }
-nav h2{
+nav h2 {
     margin: 0 0 0 10vw;
 }
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
-    margin: 0 10vw 0 0 ;
+    margin: 0 10vw 0 0;
 }
-nav ul li{
+nav ul li {
     position: relative;
     margin: 0 1vw 0 1vw;
 }
@@ -54,24 +53,23 @@ nav a:hover::after {
     color: rgb(10, 73, 10);
 }
 
-nav a:hover{
+nav a:hover {
     color: rgb(10, 73, 10);
 }
-.citologia{
-    background-color: #f4f4f9;;
-    padding: 2vw 0 2vw 0;
+.citologia {
+    background-color: #f4f4f9;
+    padding: 2vw 0;
 }
-.citologia h1{
+.citologia h1 {
     text-align: center;
-    margin: 4vw 0 4vw 0;
+    margin: 4vw 0;
     font-size: 3rem;
     position: relative;
 }
 span {
-    position: relative; /* Ensures the ::after is positioned correctly */
-    display: inline-block; /* Allows the width/height of the span to be respected */
+    position: relative;
+    display: inline-block;
 }
-
 span::after {
     position: absolute;
     content: "";
@@ -80,37 +78,36 @@ span::after {
     left: 0;
     width: 0; 
     height: 3px;
-    animation: animationLine 1s forwards; 
+    animation: animationLine 1s forwards;
 }
-
 @keyframes animationLine {
     0% {
         width: 0%;
     }
     100% {
-        width: 100%; /* Expands to full width of the span */
+        width: 100%;
     }
 }
-.citologia p{
-    margin: 0 20vw 0 20vw;
+.citologia p {
+    margin: 0 20vw;
     text-align: center;
     font-size: 1.5rem;
 }
-.celulas{
-    background-color: #f4f4f9;;
+.celulas {
+    background-color: #f4f4f9;
     padding: 2vw 0 8vw 0;
 }
-.celulas h2{
+.celulas h2 {
     text-align: center;
-    margin: 0vw 0 4vw 0;
+    margin: 0 0 4vw 0;
     color: rgb(0, 0, 0);
     font-size: 2vw;
 }
-.celulas ul{
+.celulas ul {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-}   
+}
 .celulas ul li ul{
     display: flex;
     flex-direction: column;
@@ -122,16 +119,12 @@ span::after {
     align-items: center;
     padding: 3vw;
 }
-.celulas ul li ul li{
-    margin: 0 2vw 0 2vw;
-    
-}
-.celulas ul li ul li p{
-    margin: 1.4vw 0 1.4vw 0;
+.celulas ul li ul li p {
+    margin: 1.4vw 0;
     font-size: 1rem;
     color: white;
 }
-.celulas ul li ul li h3{
+.celulas ul li ul li h3 {
     color: white;
 }
 .celulas button {
@@ -147,7 +140,6 @@ span::after {
     overflow: hidden;
     margin-top: 2vw;
 }
-
 .celulas button::before {
     content: '';
     position: absolute;
@@ -160,41 +152,36 @@ span::after {
     transform: translate(-50%, -50%) scale(0);
     border-radius: 50%;
 }
-
 .celulas button:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
-
 .celulas button:hover {
     background-color: #0056b3;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
-footer{
+footer {
     background-color: rgb(10, 73, 10);
-    padding: 2vw 0 2vw 0;
+    padding: 2vw 0;
 }
-footer p{
+footer p {
     font-size: 1.5rem;
     color: white;
-
 }
-footer ul{
+footer ul {
     display: flex;
     align-items: center;
-    margin: 0 20vw 0 20vw;
+    margin: 0 20vw;
     justify-content: space-between;
-
     padding-bottom: 2vw;
     border-bottom: 2px solid #ffffff;
 }
-footer h3{
+footer h3 {
     text-align: center;
     margin-top: 2vw;
     font-weight: 300;
     color: white;
 }
-
 footer button {
     padding: 15px 30px;
     font-size: 16px;
@@ -207,7 +194,6 @@ footer button {
     position: relative;
     overflow: hidden;
 }
-
 footer button::before {
     content: '';
     position: absolute;
@@ -220,24 +206,55 @@ footer button::before {
     transform: translate(-50%, -50%) scale(0);
     border-radius: 50%;
 }
-
 footer button:hover::before {
     transform: translate(-50%, -50%) scale(1);
 }
-
 footer button:hover {
     background-color: #0056b3;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
 }
-
-
 .celulas ul li.conteudo {
-    margin: 0 2vw 0 2vw;
-    transition: .3s; 
+    margin: 0 2vw;
+    transition: 0.3s;
 }
-
 .celulas ul li.conteudo:hover {
     transform: scale(1.01);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    nav {
+        align-items: center;
+        padding: 10px;
+    }
+    nav h2 {
+        margin: 0;
+    }
+    nav ul {
+        margin: 0;
+    }
+    nav ul li {
+        margin: 10px 10px 0 0;
+    }
+    .citologia p {
+        margin: 0 5vw;
+        font-size: 1.2rem;
+    }
+    .celulas ul {
+        flex-wrap: wrap;
+    }
+    .celulas ul li ul {
+        height: auto;
+        width: 90vw;
+        margin: 10px;
+        padding: 5vw;
+    }
+    .celulas ul li ul li p {
+        font-size: 1.2rem;
+    }
+    .celulas h2 {
+        font-size: 5vw;
+    }
 }

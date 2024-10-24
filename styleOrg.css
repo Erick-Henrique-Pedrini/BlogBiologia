@@ -170,6 +170,24 @@ span::after {
         width: 90%;
         margin-bottom: 2vw;
     }
+
+    span{
+        margin: -25vw 0 0 0;
+    }
+
+    .organelas h1{
+        font-size: 3rem;
+    
+    }
+    .organelas article{
+        font-size: 1.3rem;
+    }
+    .organelas img{
+        display: none;
+    }
+    .funcoes h2{
+        margin: 1vw;
+    }
 }
 
 
