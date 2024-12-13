@@ -20,6 +20,10 @@ nav {
 nav h2 {
     margin: 0 0 0 10vw;
 }
+nav h2 a {
+    color: #000000;
+    font-size: 24px;
+}
 nav ul {
     display: flex;
     align-items: center;
@@ -48,12 +52,12 @@ nav a::after {
     width: 0; 
 }
 
-nav a:hover::after {
+nav ul a:hover::after {
     width: 100%; 
     color: rgb(10, 73, 10);
 }
 
-nav a:hover {
+nav ul a:hover {
     color: rgb(10, 73, 10);
 }
 .citologia {
